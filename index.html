@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Foster A Pet</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- centered everything for aesthetic purposes -->
+    <center>
+      <header>
+        <h1>Sign Up to Foster a Pet</h1>
+        <table>
+        <thead>
+          <tr>
+            <th colspan="4">Available Pets</th>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Breed</th>
+            <th>(Cute) Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Benny</td>
+            <td>2</td>
+            <td>Golden Retriever</td>
+            <td><img src="assets/golden retriever.jpg"
+            width="100" height="100" alt="picture of Benny"
+            style="height:100%"></td>
+          </tr>
+          <tr>
+            <td>Felix</td>
+            <td>5</td>
+            <td>Orange Tabby</td>
+            <td><img src="assets/orange tabby.jpg"
+            width="100" height="100" alt="picture of Felix"
+            style="height:100%"></td>
+          </tr>
+          <tr>
+            <td>Cooper</td>
+            <td>8</td>
+            <td>German Shepard</td>
+            <td><img src="assets/german shepard.jpg"
+            width="100" height="100" alt="picture of Cooper"
+            style="height:100%"></td>
+          </tr>
+          <tr>
+            <td>Anna</td>
+            <td>3</td>
+            <td>Long-Haired Dachshund</td>
+            <td><img src="assets/dachshund.jpg"
+            width="100" height="100" alt="picture of Anna"
+            style="height:100%"></td>
+          </tr>
+        </tbody>
+        </table>
+        <img src="assets/dog.png"
+          alt="Cute Dog Looking Over Form"
+          width="40%" style="display:block;
+	margin-left: auto;
+	min-width: 30%;
+	max-width: 50%;">
+      </header>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name"
+        placeholder="Jane Doe" name="name">
+        <br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"
+        placeholder="example@domain.com">
+        <br>
+        <label for="pw">Password</label>
+        <input type="password" id="pw" name="password">
+        <br>
+        <label for="num-pets">Number of Pets</label>
+        <input type="number" id="num-pets" min="0"
+        name="num-pets">
+        <br>
+        <h4>Have you fostered before?</h4>
+        <label for="yes">
+          <input type="radio" id="yes"
+          name="prev-experience">Yes</input>     
+        </label>
+        <label for="no">
+          <input type="radio" id="no"
+          name="prev-experience">No</input>
+        </label>
+        <br>
+        <h4>Which of these apply to your home?</h4>
+        <label for="apartment">Apartment</label>
+        <input type="checkbox" id="apartment"
+        name="apartment">
+        <label for="children">Children</label>
+        <input type="checkbox" id="children"
+        name="children">
+        <label for="yard">Yard</label>
+        <input type="checkbox" id="yard" name="yard">
+        <input type="submit" value="Sign Up!">
+      </form>
+    </center>
+  </body>
+</html>
